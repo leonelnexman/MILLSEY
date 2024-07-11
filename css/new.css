@@ -401,3 +401,90 @@ section, .footer{
 .btn::after{
     background: #fff;
 }
+.header{
+    padding: 0 6.4rem 2rem;
+}
+.header__top{
+    padding: 1.8rem 0;
+}
+.header__bottom{
+    padding: 2.5rem 0;
+    border-bottom: 0.1rem solid #dedcd9;
+}
+.header-beidge.fixed{
+    padding-bottom: 0;
+}
+.header-beidge{
+    background: #EEECE4;
+    margin-bottom: 0;
+}
+.header__actions-btn{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.header__logo-min{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.journal__page{
+    padding: 0;
+    padding-top: 3.7rem;
+}
+main{
+    padding-top: 15rem;
+}
+.text__block{
+    margin-top: 4rem;
+}
+.text__block .section__subtitle{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 100%;
+}
+.text__block .section__title{
+    font-weight: 600;
+    font-size: 4rem;
+    color: #00  
+}
+.text__block-footer .date{
+    border-radius: 12rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(235, 235, 235, 0.5) !important; 
+    height: auto; 
+    font-size: 1.2rem;
+}
+.text__block-footer .theme{
+    border-radius: 12rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(235, 235, 235, 0.5) !important; 
+    height: auto; 
+    font-size: 1.2rem !important;
+    a{
+        background: transparent;
+        color: #000;
+        font-size: 1.2rem !important;  
+    }
+}
+.breackpoints{
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.breackpoints__link{
+    font-size: 1.4rem;
+    color: #9e9e9e;  
+}
+.breackpoints__link.active{
+    color: #000;
+    span{
+        display: none;
+    }
+}
+.img-flex{
+    display: flex;
+    gap: 2.5rem;
+    img{
+        width: 43rem;
+        height: 75rem;    
+    }
+}
