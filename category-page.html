@@ -3,36 +3,63 @@
 <html lang="ru">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Статья</title>
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/css/OverlayScrollbars.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/new.css">
+    <meta name="google-site-verification" content="1xVrW6CR40QQ1PleLIkiXDJyYMEr_FVoGwFde2QE2CY" />
+    
 </head>
 
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    <!-- header -->
-    <header class="header">
+   ym(95218072, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95218072" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+      <!-- header -->
+      <header class="header">
         <div class="header__top">
-            <div class="header__slogan">
-                СТУЛЬЯ ДЛЯ ВСЕХ И КАЖДОГО
-            </div>
+            <a href="tel:84951202219" class="header__tel ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.78943 4.98318L6.77371 4.75H6.54H5.03H4.76237L4.78058 5.01701C4.87207 6.35884 5.13641 7.65029 5.55343 8.87083L5.68312 9.25043L5.96678 8.96678L7.16678 7.76678L7.27117 7.66238L7.23016 7.52056C6.99537 6.70857 6.84829 5.85627 6.78943 4.98318ZM16.4679 16.7794L16.3275 16.7398L16.224 16.8425L15.024 18.0325L14.7346 18.3194L15.1215 18.4474C16.3505 18.8536 17.6411 19.1179 18.983 19.2094L19.25 19.2276V18.96V17.47V17.2365L19.017 17.2206C18.1541 17.1617 17.3012 17.0147 16.4679 16.7794ZM16.3372 15.1721L16.3443 15.175L16.3516 15.1774C17.4968 15.5557 18.7333 15.76 20 15.76C20.4119 15.76 20.75 16.0981 20.75 16.51V20C20.75 20.4119 20.4119 20.75 20 20.75C10.7481 20.75 3.25 13.2519 3.25 4C3.25 3.58807 3.58807 3.25 4 3.25H7.5C7.91193 3.25 8.25 3.58807 8.25 4C8.25 5.27613 8.45409 6.50196 8.83201 7.64657C8.91457 7.91124 8.85405 8.20239 8.64322 8.41322L6.44322 10.6132L6.31486 10.7416L6.39719 10.9034C7.86137 13.7809 10.2198 16.1288 13.096 17.6025L13.258 17.6855L13.3868 17.5568L15.5844 15.3592C15.7391 15.2132 15.9271 15.14 16.12 15.14C16.2067 15.14 16.28 15.1493 16.3372 15.1721Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>+7 (495) 120-22-19</span>
+            </a>
             <div class="header__sale">
-                <a href="#!">ЛЕТНИЕ РАСПРОДАЖА: КУПИТЕ 2 ИЛИ БОЛЬШЕ. ПОЛУЧИТЕ СКИДКУ 20%</a>
+                <a href="#!">ДОСТАВКА ПО МОСКВЕ И СПБ. ОТПРАВКА В РЕГИОНЫ</a>
             </div>
             <div class="header__city">
-                ЛОС-АНДЖЕЛЕС 13:45
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.83138 17.5246L8 17.6786L8.16862 17.5246C10.2032 15.6659 11.7193 13.9498 12.7284 12.3962C13.7359 10.845 14.25 9.43718 14.25 8.2C14.25 4.43519 11.4913 1.75 8 1.75C4.50869 1.75 1.75 4.43519 1.75 8.2C1.75 9.43718 2.26411 10.845 3.27159 12.3962C4.2807 13.9498 5.79683 15.6659 7.83138 17.5246ZM8 9.75C7.03807 9.75 6.25 8.96193 6.25 8C6.25 7.03807 7.03807 6.25 8 6.25C8.96193 6.25 9.75 7.03807 9.75 8C9.75 8.96193 8.96193 9.75 8 9.75ZM8 0.25C12.0697 0.25 15.75 3.36572 15.75 8.2C15.75 9.79261 15.1092 11.5564 13.7919 13.4984C12.5021 15.3998 10.5739 17.4571 8 19.6708C5.42612 17.4571 3.49792 15.3998 2.20814 13.4984C0.890842 11.5564 0.25 9.79261 0.25 8.2C0.25 3.36572 3.93029 0.25 8 0.25Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>МОСКВА</span>
             </div>
         </div>
         <div class="header__bottom">
             <div class="mob__menu-open">
                 <button>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#menu-icon"></use>
-                    </svg>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             <div class="header__logo-min">
@@ -45,7 +72,7 @@
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">ОФИСНЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -77,7 +104,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ 1</a>
+                        <a class="header__menu-link" href="#!">ИГРОВЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -106,7 +133,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">АКСЕССУАРЫ</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -481,20 +508,67 @@
                 </div>
             </div>
             <div class="mob__menu">
-                <div class="mob__menu-top">
-                    <button class="close mob__menu-close">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#close-icon"></use>
-                        </svg>
-                    </button>
-                    <div class="header__logo">
-                        <a href="#!">
-                            <img src="images/logo.svg" alt="">
-                        </a>
+                <div class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="mob__menu-bottom">
-
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -503,256 +577,236 @@
 
     <!-- main -->
     <main>
-        <!-- intro -->
-        <section class="intro intro__article">
-            <div class="intro__bg" style="background-image: url(images/gamer-bg.jpg);"> </div>
-            <div class="intro__content white bottom">
-                <h2 class="section__title-big">
-                    Our Premier Watch In Collaboration With Bamford London
+        <div class="category-page">
+            <div class="breackpoints">
+                <a href="#" class="breackpoints__link">Main <span>-</span></a>
+                <a href="#" class="breackpoints__link">Catalog <span>-</span></a>
+                <a href="#" class="breackpoints__link active">Office chairs <span>-</span></a>
+            </div>
+            <div class="category__title">Office chairs</div>
+        </div>
+        <section class="category">
+            <div class="container">
+                <div class="category__brand-title">Herman Miller</div>
+                <div class="category__brand-text">Новейшая сетка 8Z Pellicle предлагает непревзойденный комфорт, благодаря уникальным восьми зонам натяжения.</div>
+            </div>
+            <div class="category-bestsellers">
+                <div class="container">
+                    <div class="category-bestsellers__inner mcs-horizontal">
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container">
+                <div class="category__brand-title">Herman Miller</div>
+                <div class="category__brand-text">Новейшая сетка 8Z Pellicle предлагает непревзойденный комфорт, благодаря уникальным восьми зонам натяжения.</div>
+            </div>
+            <div class="category-bestsellers">
+                <div class="container">
+                    <div class="category-bestsellers__inner mcs-horizontal">
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container">
+                <div class="category__brand-title">Herman Miller</div>
+                <div class="category__brand-text">Новейшая сетка 8Z Pellicle предлагает непревзойденный комфорт, благодаря уникальным восьми зонам натяжения.</div>
+            </div>
+            <div class="category-bestsellers">
+                <div class="container">
+                    <div class="category-bestsellers__inner mcs-horizontal">
+                        <div class="bestsellers__item">
+                            <div class="bestsellers__img">
+                                <img src="./images/bestseller.png" alt="">
+                            </div>
+                            <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                            <div class="bestsellers__collors">
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor">
+                                    <img src="./images/color.png" alt="">
+                                </div>
+                                <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                            </div>
+                            <a href="#!" class="btn bestsellers__btn">
+                                От 169 990 ₽
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="gamer mebel">
+            <div class="container">
+                <div class="gamer__bg" style="background-image: url(images/mebel.jpg);"></div>
+            <div class="gamer__content">
+                <h2 class="section__title-big gamer__title">
+                    Подбор и поставка офисной мебели для компаний
                 </h2>
-            </div>
-        </section>
-        <!-- intro -->
-
-        <!-- article -->
-        <section class="article">
-            <div class="article__text">
-                <p>
-                    As we all have phones in our pockets to tell the time these days, the once-ubiquitous watch has
-                    transcended its primary function to become a symbol of sophistication, style and class.
-                </p>
-                <p>
-                    While the era when every person wore a wristwatch is sadly behind us, the confident statement that a
-                    beautiful, artisan timepiece makes has only enhanced as they’ve become rarer.
-                </p>
-                <p>
-                    At AETHER, we pride ourselves on making products at the nexus of form and function that are made to
-                    protect you in style regardless of the conditions. We’re very proud to continue this legacy with our
-                    limited edition collaboration with Bamford London, the celebrated British watchmaker.
-                </p>
-            </div>
-            <div class="article__img">
-                <div class="article__img-item w100">
-                    <img src="images/article-img-1.webp" alt="">
+                <div class="gamer__btn">
+                    <a href="#!" class="btn btn--white">
+                        Подробнее
+                    </a>
                 </div>
             </div>
-            <div class="article__text">
-                <p>
-                    Since the brand’s earliest days, Bamford’s motto has been: “If you can imagine it, we can create it
-                    for you.” AETHER imagined a sophisticated yet highly functional timepiece that can withstand the
-                    kind of elements that our jackets and technical apparel are built for. Characterized by our
-                    signature minimalist style, this watch is designed to exude class and subtle panache without being
-                    flashy or ostentatious.
-                </p>
-                <p>
-                    This collaboration represents the shared values and philosophy of both brands, emphasizing the
-                    importance of living life to the fullest; the watch is built to accompany you on outdoor adventures
-                    into unforgiving weather.
-                </p>
             </div>
-            <div class="article__img">
-                <div class="article__img-item w50">
-                    <img src="images/article-img-2.webp" alt="">
-                </div>
-                <div class="article__img-item w50">
-                    <img src="images/article-img-3.webp" alt="">
-                </div>
-            </div>
-            <div class="article__text">
-                <p>
-                    <a href="#!">Since the brand’s </a> earliest days, Bamford’s motto has been: “If you can imagine it,
-                    we can create it
-                    for you.” AETHER imagined a sophisticated yet highly functional timepiece that can withstand the
-                    kind of elements that our jackets and technical apparel are built for. Characterized by our
-                    signature minimalist style, this watch is designed to exude class and subtle panache without being
-                    flashy or ostentatious.
-                </p>
-                <p>
-                    This collaboration represents the shared values and philosophy of both brands, emphasizing the
-                    importance of living life to the fullest; the watch is built to accompany you on outdoor adventures
-                    into unforgiving weather.
-                </p>
-            </div>
-            <div class="article__img">
-                <div class="article__img-item w100">
-                    <img src="images/article-img-4.webp" alt="">
-                </div>
-            </div>
-            <div class="article__img">
-                <div class="article__img-item w50">
-                    <img src="images/article-img-5.webp" alt="">
-                </div>
-                <div class="article__img-item w50">
-                    <img src="images/article-img-6.webp" alt="">
-                </div>
-            </div>
-            <div class="article__text">
-                <p>
-                    <a href="#!">Since the brand’s </a> earliest days, Bamford’s motto has been: “If you can imagine it,
-                    we can create it
-                    for you.” AETHER imagined a sophisticated yet highly functional timepiece that can withstand the
-                    kind of elements that our jackets and technical apparel are built for. Characterized by our
-                    signature minimalist style, this watch is designed to exude class and subtle panache without being
-                    flashy or ostentatious.
-                </p>
-                <p>
-                    This collaboration represents the shared values and philosophy of both brands, emphasizing the
-                    importance of living life to the fullest; the watch is built to accompany you on outdoor adventures
-                    into unforgiving weather.
-                </p>
-            </div>
-            <div class="article__big">
-                <div class="article__big-item w50">
-                    <div class="section__title article__big-title">
-                        “Watches are a representation of our belief in making the most of the one life we get. Time is
-                        finite and we value a life well-lived.”
-                    </div>
-                    <img src="images/article-img-9.webp" alt="">
-                </div>
-                <div class="article__big-item w50">
-                    <div class="article__big-img">
-                        <img src="images/article-img-10.webp" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- article -->
-
-        <!-- art__shop -->
-        <section class="art__shop">
-            <h2 class="section__title more__title title--border">
-                Shop this Story
-            </h2>
-            <div class="products__flex">
-                <div class="product__item-wrap">
-                    <div class="product__item">
-                        <div class="product__img">
-                            <a href="#!">
-                                <img src="images/more-img.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product__title">
-                            Игровое кесло Logitech 403
-                        </div>
-                        <div class="product__price">
-                            $425
-                        </div>
-                        <div class="product__btn">
-                            <a href="#!" class="btn">
-                                Посмотреть
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- art__shop -->
-
-        <!-- techn -->
-        <section class="articles__list">
-            <div class="techn__content">
-                <div class="techn__row">
-                    <h4 class="techn__row-title accordeon__title">
-                        ОСОБЕННОСТИ И ПОДХОД
-                    </h4>
-                    <div class="techn__row-content accordeon__content">
-                        <div class="articles__list-flex">
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="techn__row">
-                    <h4 class="techn__row-title accordeon__title">
-                        ОСОБЕННОСТИ И ПОДХОД
-                    </h4>
-                    <div class="techn__row-content accordeon__content">
-                        <div class="articles__list-flex">
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="techn__row">
-                    <h4 class="techn__row-title accordeon__title">
-                        ОСОБЕННОСТИ И ПОДХОД
-                    </h4>
-                    <div class="techn__row-content accordeon__content">
-                        <div class="articles__list-flex">
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="articles__list-item__wrap">
-                                <div class="articles__list-item">
-                                    <div class="articles__list-img">
-                                        <a href="#!">
-                                            <img src="images/articles-list-img.webp" alt="">
-                                        </a>
-                                    </div>
-                                    <h4 class="articles__list-title">
-                                        AETHER Asks: Jaycee Gossett, Founding Teacher of The Class
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- techn -->
+        </section>  
 
     </main>
     <!-- main -->
@@ -764,13 +818,11 @@
                 <div class="footer__form">
                     <div class="footer__form-content">
                         <h2 class="section__title">
-                            Подпишитесь на нашу
-                            рассылку, чтобы получить
-                            скидку 10%
+                            Не нашли нужную <br> конфигурацию
                         </h2>
                         <form action="#!">
                             <div class="form__field">
-                                <input type="mail" placeholder="Email address">
+                                <input type="tel" placeholder="Введите ваш номер телефона">
                             </div>
                             <div class="form__field">
                                 <button type="sumbit">ПОДПИСАТЬСЯ НА РАССЫЛКУ</button>
@@ -782,30 +834,20 @@
                     <div class="footer__tabs">
                         <div class="footer__tabs-content">
                             <h2 class="section__title">
-                                Посетите
-                                наши
-                                магазины
+                                Адреса наших <br> магазинов
                             </h2>
                             <ul class="tabs__links">
                                 <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city1')"
-                                        id="defaultOpen">ЛОС-АНДЖЕЛЕС</a></li>
+                                        id="defaultOpen">Москва</a></li>
                                 <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city2')">НЬЮ-ЙОРК</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city3')">САН-ФРАНЦИСКО</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city4')">ДЕНВЕР
-                                        (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city5')">JACKSON
-                                        HOLE (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city6')">AETHERSTREAM</a></li>
+                                        onmouseover="openCity(event, 'city2')">Санкт-Петербург</a></li>
+                                
                             </ul>
                         </div>
                         <div class="footer__tabs-images">
                             <div class="tabs__content">
                                 <div id="city1" class="tabcontent">
-                                    <div style="background-image: url(images/coll-img-1.jpg);">
-                                    </div>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af03d188b05cd4c4cbd2a4e2a922a23f39cac5d4c720e21062fb1d35ed2b4ed07&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                                 </div>
                                 <div id="city2" class="tabcontent">
                                     <div style="background-image: url(images/coll-img-2.jpg);">
@@ -898,16 +940,16 @@
                     <li><a href="#!">Чат</a></li>
                 </ul>
             </div>
-        </div>
+        </div> 
         <div class="footer__bottom">
             <div class="footer__slogan">
                 YOU ONLY LIVE ONCE, BUT IF YOU DO IT RIGHT, ONCE IS ENOUGH. – MAE WEST
             </div>
             <div class="foooter__copy">
-                © 2023 ALL RIGHTS RESERVED
+                © 2024 ALL RIGHTS RESERVED
             </div>
-        </div>
-    </footer>
+        </div> 
+    </footer> 
     <!-- footer -->
 
 
@@ -925,13 +967,13 @@
         <symbol id="filter-icon" viewBox="0 0 21 21">
             <path
                 d="M18.2558 3.62953V0.132812H17.1311V3.62953C16.047 3.88218 15.2365 4.85237 15.2365 6.00446C15.2365 7.15656 16.047 8.12675 17.1311 8.3794V20.1328H18.2558V8.3794C19.3399 8.12675 20.1504 7.15656 20.1504 6.00446C20.1504 4.85237 19.3399 3.88218 18.2558 3.62953ZM17.6884 7.32837C16.9589 7.32837 16.3611 6.7321 16.3611 6.00446C16.3611 5.27682 16.9589 4.68056 17.6884 4.68056C18.4179 4.68056 19.0156 5.27682 19.0156 6.00446C19.0156 6.7321 18.4179 7.32837 17.6884 7.32837Z"
-                fill="black"></path>
+               ></path>
             <path
                 d="M3.16964 3.62953V0.132812H2.04502V3.62953C0.960928 3.88218 0.150391 4.84226 0.150391 6.00446C0.150391 7.16667 0.960928 8.12675 2.04502 8.3794V20.1328H3.16964V8.3794C4.25373 8.12675 5.06427 7.15656 5.06427 6.00446C5.06427 4.85237 4.25373 3.88218 3.16964 3.62953ZM2.6124 7.32837C1.88291 7.32837 1.28514 6.7321 1.28514 6.00446C1.28514 5.27682 1.88291 4.68056 2.6124 4.68056C3.34188 4.68056 3.93965 5.27682 3.93965 6.00446C3.93965 6.7321 3.34188 7.32837 2.6124 7.32837Z"
-                fill="black"></path>
+               ></path>
             <path
                 d="M10.7076 12.2096V0.132812H9.58301V12.2096C8.49892 12.4623 7.68838 13.4325 7.68838 14.5846C7.68838 15.7367 8.49892 16.7068 9.58301 16.9595V20.1227H10.7076V16.9595C11.7917 16.7068 12.6023 15.7367 12.6023 14.5846C12.6023 13.4325 11.7917 12.4623 10.7076 12.2096ZM10.1301 15.9287C9.40064 15.9287 8.80287 15.3324 8.80287 14.6048C8.80287 13.8771 9.40064 13.2809 10.1301 13.2809C10.8596 13.2809 11.4574 13.8771 11.4574 14.6048C11.4574 15.3324 10.8596 15.9287 10.1301 15.9287Z"
-                fill="black"></path>
+                ></path>
     </symbol>
         <symbol id="search-icon" viewBox="0 0 24 24">
             <g clip-path="url(#clip0_1418_12573)">
@@ -1006,9 +1048,9 @@
     <!-- svg sprite -->
 
 
-
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

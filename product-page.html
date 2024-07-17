@@ -3,36 +3,63 @@
 <html lang="ru">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/css/OverlayScrollbars.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/new.css">
+    <meta name="google-site-verification" content="1xVrW6CR40QQ1PleLIkiXDJyYMEr_FVoGwFde2QE2CY" />
+    
 </head>
 
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(95218072, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95218072" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <!-- header -->
     <header class="header">
         <div class="header__top">
-            <div class="header__slogan">
-                СТУЛЬЯ ДЛЯ ВСЕХ И КАЖДОГО
-            </div>
+            <a href="tel:84951202219" class="header__tel ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.78943 4.98318L6.77371 4.75H6.54H5.03H4.76237L4.78058 5.01701C4.87207 6.35884 5.13641 7.65029 5.55343 8.87083L5.68312 9.25043L5.96678 8.96678L7.16678 7.76678L7.27117 7.66238L7.23016 7.52056C6.99537 6.70857 6.84829 5.85627 6.78943 4.98318ZM16.4679 16.7794L16.3275 16.7398L16.224 16.8425L15.024 18.0325L14.7346 18.3194L15.1215 18.4474C16.3505 18.8536 17.6411 19.1179 18.983 19.2094L19.25 19.2276V18.96V17.47V17.2365L19.017 17.2206C18.1541 17.1617 17.3012 17.0147 16.4679 16.7794ZM16.3372 15.1721L16.3443 15.175L16.3516 15.1774C17.4968 15.5557 18.7333 15.76 20 15.76C20.4119 15.76 20.75 16.0981 20.75 16.51V20C20.75 20.4119 20.4119 20.75 20 20.75C10.7481 20.75 3.25 13.2519 3.25 4C3.25 3.58807 3.58807 3.25 4 3.25H7.5C7.91193 3.25 8.25 3.58807 8.25 4C8.25 5.27613 8.45409 6.50196 8.83201 7.64657C8.91457 7.91124 8.85405 8.20239 8.64322 8.41322L6.44322 10.6132L6.31486 10.7416L6.39719 10.9034C7.86137 13.7809 10.2198 16.1288 13.096 17.6025L13.258 17.6855L13.3868 17.5568L15.5844 15.3592C15.7391 15.2132 15.9271 15.14 16.12 15.14C16.2067 15.14 16.28 15.1493 16.3372 15.1721Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>+7 (495) 120-22-19</span>
+            </a>
             <div class="header__sale">
-                <a href="#!">ЛЕТНИЕ РАСПРОДАЖА: КУПИТЕ 2 ИЛИ БОЛЬШЕ. ПОЛУЧИТЕ СКИДКУ 20%</a>
+                <a href="#!">ДОСТАВКА ПО МОСКВЕ И СПБ. ОТПРАВКА В РЕГИОНЫ</a>
             </div>
             <div class="header__city">
-                ЛОС-АНДЖЕЛЕС 13:45
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.83138 17.5246L8 17.6786L8.16862 17.5246C10.2032 15.6659 11.7193 13.9498 12.7284 12.3962C13.7359 10.845 14.25 9.43718 14.25 8.2C14.25 4.43519 11.4913 1.75 8 1.75C4.50869 1.75 1.75 4.43519 1.75 8.2C1.75 9.43718 2.26411 10.845 3.27159 12.3962C4.2807 13.9498 5.79683 15.6659 7.83138 17.5246ZM8 9.75C7.03807 9.75 6.25 8.96193 6.25 8C6.25 7.03807 7.03807 6.25 8 6.25C8.96193 6.25 9.75 7.03807 9.75 8C9.75 8.96193 8.96193 9.75 8 9.75ZM8 0.25C12.0697 0.25 15.75 3.36572 15.75 8.2C15.75 9.79261 15.1092 11.5564 13.7919 13.4984C12.5021 15.3998 10.5739 17.4571 8 19.6708C5.42612 17.4571 3.49792 15.3998 2.20814 13.4984C0.890842 11.5564 0.25 9.79261 0.25 8.2C0.25 3.36572 3.93029 0.25 8 0.25Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>МОСКВА</span>
             </div>
         </div>
         <div class="header__bottom">
             <div class="mob__menu-open">
                 <button>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#menu-icon"></use>
-                    </svg>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             <div class="header__logo-min">
@@ -45,7 +72,7 @@
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">ОФИСНЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -77,7 +104,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ 1</a>
+                        <a class="header__menu-link" href="#!">ИГРОВЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -106,7 +133,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">АКСЕССУАРЫ</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -481,310 +508,479 @@
                 </div>
             </div>
             <div class="mob__menu">
-                <div class="mob__menu-top">
-                    <button class="close mob__menu-close">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#close-icon"></use>
-                        </svg>
-                    </button>
-                    <div class="header__logo">
-                        <a href="#!">
-                            <img src="images/logo.svg" alt="">
-                        </a>
+                <div class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="mob__menu-bottom">
-
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- header -->
-
     <!-- main -->
     <main>
-        <!-- catalog -->
-        <section class="catalog">
-            <div class="catalog__top" style="background-image: url(images/intro-bg.jpg)">
-                <div class="catalog__top-content">
-                    <h1 class="section__title-big">Все стулья</h1>
-                </div>
+        <div class="category-page">
+            <div class="breackpoints">
+                <a href="#" class="breackpoints__link">Main <span>-</span></a>
+                <a href="#" class="breackpoints__link">Catalog <span>-</span></a>
+                <a href="#" class="breackpoints__link active">Office chairs <span>-</span></a>
             </div>
-            <div class="catalog__categories">
-                <ul class="catalog__categoris-list">
-                    <li class="active"><a href="#!">All</a></li>
-                    <li><a href="#!">New Styles</a></li>
-                    <li><a href="#!">Insulated Jackets</a></li>
-                    <li><a href="#!">All</a></li>
-                    <li><a href="#!">New Styles</a></li>
-                    <li><a href="#!">Insulated Jackets</a></li>
-                </ul>
-                <div class="catalog__categories-filter">
-                    <button class="filter__open">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#filter-icon"></use>
-                        </svg>
-                        Фильтры
-                    </button>
-                    <div class="filter__drop">
-                        <div class="filter__drop-top">
-                            <div class="section__title">
-                                Фильтры
-                            </div>
-                            <button class="close close__filter">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#close-icon"></use>
+        </div>
+        <section class="product__page">
+            <div class="container">
+                <div class="product__page-img">
+                    <img src="./images/img.jpg" alt="">
+                    <img src="./images/img.jpg" alt="">
+                    <img src="./images/img.jpg" alt="">
+                    <img src="./images/img.jpg" alt="">
+                </div>
+                <div class="product__page-actions">
+                    <div class="product__page-top">
+                        <div class="product__page-reviews">
+                            <div class="product__page-star">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.2393 8.81767L12 8.02592L11.7607 8.81767L10.8744 11.75H8.24H7.45932L8.09478 12.2035L10.2179 13.7186L9.34114 16.5562L9.11117 17.3005L9.73131 16.829L12 15.1041L14.2687 16.829L14.8888 17.3005L14.6589 16.5562L13.7821 13.7186L15.9052 12.2035L16.5407 11.75H15.76H13.1256L12.2393 8.81767ZM9.58 10.25H9.76556L9.81929 10.0724L12 2.86343L14.1807 10.0724L14.2344 10.25H14.42H21.2203L15.6846 14.2066L15.5378 14.3115L15.5912 14.4839L17.7109 21.3302L12.1511 17.1109L11.9999 16.9961L11.8487 17.111L6.29813 21.3301L8.4089 14.4837L8.462 14.3114L8.31537 14.2066L2.7797 10.25H9.58Z" fill="#159400" stroke="white" stroke-width="0.5" />
                                 </svg>
-                            </button>
+                                5.0
+                            </div>
+                            12 отзывов
                         </div>
-                        <div class="filter__list">
-                            <div class="filter__row">
-                                <h4 class="filter-row__title accordeon__title">
-                                    Особенности продукта
-                                </h4>
-                                <div class="accordeon__content">
-                                    <div class="filter__content">
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__row">
-                                <h4 class="filter-row__title accordeon__title">
-                                    Особенности продукта
-                                </h4>
-                                <div class="accordeon__content">
-                                    <div class="filter__content">
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__row">
-                                <h4 class="filter-row__title accordeon__title">
-                                    Особенности продукта
-                                </h4>
-                                <div class="accordeon__content">
-                                    <div class="filter__content">
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter__row">
-                                <h4 class="filter-row__title accordeon__title">
-                                    Особенности продукта
-                                </h4>
-                                <div class="accordeon__content">
-                                    <div class="filter__content">
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                        <div class="filter__item-wrap">
-                                            <div class="filter__item active">
-                                                <a href="#!">Синий</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="garant">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9222 20.1576L12 20.1831L12.0778 20.1576C15.6414 18.9904 18.25 15.1862 18.25 11.09V6.39V6.21675L18.0878 6.15592L12.0878 3.90592L12 3.873L11.9122 3.90592L5.91222 6.15592L5.75 6.21675V6.39V11.09C5.75 15.1964 8.35873 18.9904 11.9222 20.1576ZM4.25 5.17325L12 2.267L19.75 5.17325V11.09C19.75 16.0166 16.4355 20.5968 12 21.742C7.56445 20.5968 4.25 16.0166 4.25 11.09V5.17325Z" fill="#159400" stroke="white" stroke-width="0.5" />
+                            </svg>
+                            Гарантия производителя 5 лет
+                        </div>
+                    </div>
+                    <div class="product__page-title">Office chair Herman Miller Aeron</div>
+                    <div class="product__page-descr">
+                        Новейшая сетка 8Z Pellicle предлагает непревзойденный комфорт, благодаря уникальным восьми зонам натяжения.
+                    </div>
+                    <div class="product__page-tabs">
+                        <button class="product__page-tab">В наличии</button>
+                        <button class="product__page-tab active"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2512 3V2.75H13.0012H11.0012H10.7512V3V4V4.25H11.0012H13.0012H13.2512V4V3ZM12.0793 9.87252L12.0016 9.84696L11.9238 9.87226L6.54384 11.6223L6.543 11.6225L4.143 12.4125L3.91486 12.4876L3.98077 12.7186L5.11077 16.6786L5.19721 16.9815L5.47258 16.8285C6.04601 16.51 6.46771 16.0879 6.67937 15.8446C6.67952 15.8444 6.67967 15.8442 6.67982 15.844L8.00117 14.3389L9.32202 15.8435C9.50286 16.056 9.83986 16.4032 10.2932 16.6993C10.7474 16.996 11.3322 17.25 12.0012 17.25C12.6701 17.25 13.2549 16.996 13.7091 16.6993C14.1625 16.4032 14.4995 16.056 14.6804 15.8434L16.0006 14.3396L17.3225 15.854C17.3225 15.8541 17.3226 15.8541 17.3226 15.8541C17.5322 16.0951 17.9542 16.5288 18.5298 16.8485L18.806 17.002L18.8918 16.6979L20.0118 12.7279L20.077 12.4968L19.8487 12.4223L17.4593 11.6425L17.4587 11.6423L12.0793 9.87252ZM9.25117 1.25H14.7512V4V4.25H15.0012H18.0012C18.9631 4.25 19.7512 5.03807 19.7512 6V10.62V10.8011L19.9232 10.8575L21.2032 11.2775L21.2032 11.2776L21.2077 11.2789C21.406 11.34 21.5698 11.4763 21.6576 11.6518C21.7477 11.832 21.7641 12.0454 21.7022 12.2465L21.7022 12.2465L21.7006 12.2519L19.8628 18.7477C18.4116 18.6987 17.1088 17.8862 16.1893 16.8354L16.0012 16.6204L15.813 16.8354C14.8644 17.9195 13.5078 18.75 12.0012 18.75C10.4945 18.75 9.13792 17.9195 8.18931 16.8354L8.00117 16.6204L7.81303 16.8354C6.89351 17.8863 5.59061 18.6988 4.13932 18.7477L2.29163 12.2516L2.29201 12.2515L2.28742 12.2382C2.22168 12.0483 2.24165 11.8381 2.33478 11.6518C2.42254 11.4763 2.58631 11.34 2.78469 11.2789L2.7847 11.279L2.78857 11.2777L4.07857 10.8577L4.25117 10.8015V10.62V6C4.25117 5.03807 5.03924 4.25 6.00117 4.25H9.00117H9.25117V4V1.25ZM5.75117 9.97V10.3152L6.07916 10.2075L12.0012 8.26313L17.9232 10.2075L18.2512 10.3152V9.97V6V5.75H18.0012H6.00117H5.75117V6V9.97ZM8.11439 21.7871L8.00117 21.7296L7.88795 21.7871C6.65992 22.4109 5.33847 22.75 4.00117 22.75H2.25117V21.25H4.00117C5.39337 21.25 6.77856 20.7971 8.00129 19.9824C9.22763 20.7967 10.6133 21.21 12.0012 21.21C13.3891 21.21 14.7747 20.7967 16.001 19.9824C17.2238 20.7971 18.609 21.25 20.0012 21.25H21.7512V22.75H20.0012C18.6628 22.75 17.3419 22.4203 16.1158 21.7878L16.0012 21.7287L15.8866 21.7878C14.6627 22.4192 13.3321 22.73 12.0012 22.73C10.6714 22.73 9.34008 22.4097 8.11439 21.7871Z" fill="black" stroke="white" stroke-width="0.5" />
+                          </svg>Под заказ</button>
+                    </div>
+                    <div class="product__page-block">
+                        <div class="colors">
+                            <div class="colors__title">Цвет</div>
+                            <div class="colors__wrapper">
+                                <button class="colors__item active">
+                                    <img src="./images/color-black.png" alt="">
+                                    Black
+                                </button>
+                                <button class="colors__item">
+                                    <img src="./images/color-black.png" alt="">
+                                    Black
+                                </button>
+                                <button class="colors__item">
+                                    <img src="./images/color-black.png" alt="">
+                                    Black
+                                </button>
+                                <button class="colors__item">
+                                    <img src="./images/color-black.png" alt="">
+                                    Black
+                                </button>
+                                <button class="colors__item">
+                                    <img src="./images/color-black.png" alt="">
+                                    Black
+                                </button>
                             </div>
                         </div>
-                        <div class="filter__footer">
-                            <div class="filter__clear">
-                                <button>Очистить</button>
-                            </div>
-                            <div class="filter__submit">
-                                <button>show 11 results</button>
+                        <div class="sizes">
+                            <div class="sizes__title">Размер</div>
+                            <div class="colors__wrapper">
+                                <button class="sizes__item active">
+                                    A - маленький
+                                </button>
+                                <button class="sizes__item">
+                                    B - средний
+                                </button>
+                                <button class="sizes__item">
+                                    C - большой
+                                </button>
                             </div>
                         </div>
+                        <div class="dop">
+                            <div class="dop__title">Дополнительные колесики</div>
+                            <div class="dop__wrapper">
+                                <div class="dop__item">
+                                    <div class="dop__item-img">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66668 7.48334H12.5167V8.51668H8.66668H8.51668V8.66668V12.5167H7.48334V8.66668V8.51668H7.33334H3.48334V7.48334H7.33334H7.48334V7.33334V3.48334H8.51668V7.33334V7.48334H8.66668Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75726 10.6894L5.86327 10.7954L5.96934 10.6894L12.9233 3.74208L13.6512 4.47L5.86332 12.2579L2.34917 8.74371L3.08295 8.01509L5.75726 10.6894Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                    Колесики для паркета
+                                    <div class="dop__item-price">4990 ₽</div>
+                                </div>
+                                <div class="dop__item active">
+                                    <div class="dop__item-img">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66668 7.48334H12.5167V8.51668H8.66668H8.51668V8.66668V12.5167H7.48334V8.66668V8.51668H7.33334H3.48334V7.48334H7.33334H7.48334V7.33334V3.48334H8.51668V7.33334V7.48334H8.66668Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75726 10.6894L5.86327 10.7954L5.96934 10.6894L12.9233 3.74208L13.6512 4.47L5.86332 12.2579L2.34917 8.74371L3.08295 8.01509L5.75726 10.6894Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                    Колесики для паркета с автоторможением
+                                    <div class="dop__item-price">7990 ₽</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="dop">
+                            <div class="dop__title">Дополнительные колесики</div>
+                            <div class="dop__wrapper">
+                                <div class="dop__item">
+                                    <div class="dop__item-img">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66668 7.48334H12.5167V8.51668H8.66668H8.51668V8.66668V12.5167H7.48334V8.66668V8.51668H7.33334H3.48334V7.48334H7.33334H7.48334V7.33334V3.48334H8.51668V7.33334V7.48334H8.66668Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75726 10.6894L5.86327 10.7954L5.96934 10.6894L12.9233 3.74208L13.6512 4.47L5.86332 12.2579L2.34917 8.74371L3.08295 8.01509L5.75726 10.6894Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                    Колесики для паркета
+                                    <div class="dop__item-price">4990 ₽</div>
+                                </div>
+                                <div class="dop__item active">
+                                    <div class="dop__item-img">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.66668 7.48334H12.5167V8.51668H8.66668H8.51668V8.66668V12.5167H7.48334V8.66668V8.51668H7.33334H3.48334V7.48334H7.33334H7.48334V7.33334V3.48334H8.51668V7.33334V7.48334H8.66668Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75726 10.6894L5.86327 10.7954L5.96934 10.6894L12.9233 3.74208L13.6512 4.47L5.86332 12.2579L2.34917 8.74371L3.08295 8.01509L5.75726 10.6894Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                    Колесики для паркета с автоторможением
+                                    <div class="dop__item-price">7990 ₽</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="product__page-inner">
+                            <div class="product__page-price">269 990 ₽</div>
+                            <div class="product__page-saleprice">259 990 ₽</div>
+                            <div class="product__page-sale-lable">- 12%</div>
+                        </div>
+                        <button class="product__page-button">В корзину</button>
+                        <div class="product__page-delivery">Доставка в Екатеринбург - <span>до 3 дней</span></div>
                     </div>
                 </div>
             </div>
-            <div class="catalog__flex-wrap">
-                <div class="catalog__flex">
-                    <div class="catalog__item-wrap">
-                        <div class="catalog__item">
-                            <div class="catalog__item-gallery">
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <h2 class="catalog__item-title">
-                                <a href="#!">Стул Aeron (черный)</a>
-                            </h2>
-                            <div class="catalog__item-price">
-                                <span> $1.275.00</span> ИЗНОСОСТОЙКИЙ
-                            </div>
-                            <div class="catalog__item-colors">
-                                <ul class="color__list">
-                                    <li class="active"><button style="background-color: #000">Черный</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: green">Зеленый</button></li>
-                                </ul>
-                                <div class="color__active">
-                                    ЦВЕТ. <span>ЧЕРНЫЙ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="catalog__item-wrap">
-                        <div class="catalog__item">
-                            <div class="catalog__item-gallery">
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <h2 class="catalog__item-title">
-                                <a href="#!">Стул Aeron (черный)</a>
-                            </h2>
-                            <div class="catalog__item-price">
-                                <span> $1.275.00</span> ИЗНОСОСТОЙКИЙ
-                            </div>
-                            <div class="catalog__item-colors">
-                                <ul class="color__list">
-                                    <li class="active"><button style="background-color: #000">Черный</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: green">Зеленый</button></li>
-                                </ul>
-                                <div class="color__active">
-                                    ЦВЕТ. <span>ЧЕРНЫЙ</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="catalog__item-wrap">
-                        <div class="catalog__item">
-                            <div class="catalog__item-gallery">
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                                <div class="gallery__item">
-                                    <a href="#!">
-                                        <img src="images/catalog-img.jpg " alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <h2 class="catalog__item-title">
-                                <a href="#!">Стул Aeron (черный)</a>
-                            </h2>
-                            <div class="catalog__item-price">
-                                <span> $1.275.00</span> ИЗНОСОСТОЙКИЙ
-                            </div>
-                            <div class="catalog__item-colors">
-                                <ul class="color__list">
-                                    <li class="active"><button style="background-color: #000">Черный</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: orange">Оранжевый</button></li>
-                                    <li><button style="background-color: green">Зеленый</button></li>
-                                </ul>
-                                <div class="color__active">
-                                    ЦВЕТ. <span>ЧЕРНЫЙ</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
         </section>
-        <!-- catalog -->
+        <section class="recommendations">
+            <div class="container">
+                <section class="category">
+                    <div class="container">
+                        <div class="category__brand-title">Рекомендуем посмотреть</div>
+                        <div class="category__brand-text">Кресла со схожей конструкцией и эрогонимикой</div>
+                    </div>
+                    <div class="category-bestsellers">
+                        <div class="container">
+                            <div class="category-bestsellers__inner mcs-horizontal">
+                                <div class="bestsellers__item">
+                                    <div class="bestsellers__img">
+                                        <img src="./images/bestseller.png" alt="">
+                                    </div>
+                                    <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                                    <div class="bestsellers__collors">
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                                    </div>
+                                    <a href="#!" class="btn bestsellers__btn">
+                                        От 169 990 ₽
+                                    </a>
+                                </div>
+                                <div class="bestsellers__item">
+                                    <div class="bestsellers__img">
+                                        <img src="./images/bestseller.png" alt="">
+                                    </div>
+                                    <div class="bestsellers__name">Кресло Herman Miller Cosm</div>
+                                    <div class="bestsellers__collors">
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor">
+                                            <img src="./images/color.png" alt="">
+                                        </div>
+                                        <div class="bestsellers__collor-lable">+4 цвета в наличии</div>
+                                    </div>
+                                    <a href="#!" class="btn bestsellers__btn">
+                                        От 169 990 ₽
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__headings">
+                    <div class="reviews__title">Отзывы</div>
+                    <div class="reviews__heiadings-inner">
+                        <div class="reviews__heiadings-star">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.4307 11.6865L17 10.2614L16.5692 11.6865L15.0992 16.55H10.7333H9.3281L10.4719 17.3663L13.9908 19.8776L12.5367 24.5839L12.1227 25.9237L13.239 25.0749L17 22.2153L20.761 25.0749L21.8772 25.9237L21.4633 24.5839L20.0092 19.8776L23.5281 17.3663L24.6719 16.55H23.2666H18.9007L17.4307 11.6865ZM12.9666 14.1167H13.3007L13.3974 13.797L17 1.88755L20.6026 13.797L20.6993 14.1167H21.0333H32.2632L23.1216 20.6506L22.8574 20.8395L22.9534 21.1498L26.4556 32.461L17.272 25.4916L16.9998 25.285L16.7277 25.4918L7.55928 32.461L11.0467 21.1493L11.1423 20.8393L10.8783 20.6506L1.73678 14.1167H12.9666Z" fill="#159400" stroke="white" stroke-width="0.9" />
+                            </svg>
+                            <div class="reviews__heiadings-star-value">5.0</div>
+                        </div>
+                        на основании <span>177 отзывов</span>
+                    </div>
+                </div>
+                <div class="reviews__wrapper">
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-avatar">
+                                <img src="./images/avatar.png" alt="">
+                            </div>
+                            <div class="reviews__item-user">
+                                <div class="reviews__item-username">Фёдор</div>
+                                <div class="reviews__item-date">22 июня 2024</div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-content">
+                            <div class="reviews__item-images">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                            </div>
+                            <p class="reviews__item-text">Тут и говорить нечего. Хорошее кресло))) Подголовник тоже ничего, но немного по высоте не подошел.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-avatar">
+                                <img src="./images/avatar.png" alt="">
+                            </div>
+                            <div class="reviews__item-user">
+                                <div class="reviews__item-username">Фёдор</div>
+                                <div class="reviews__item-date">22 июня 2024</div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-content">
+                            <div class="reviews__item-images">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                            </div>
+                            <p class="reviews__item-text">Тут и говорить нечего. Хорошее кресло))) Подголовник тоже ничего, но немного по высоте не подошел.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-avatar">
+                                <img src="./images/avatar.png" alt="">
+                            </div>
+                            <div class="reviews__item-user">
+                                <div class="reviews__item-username">Фёдор</div>
+                                <div class="reviews__item-date">22 июня 2024</div>
+                            </div>
+                        </div>
+                        <div class="reviews__item-content">
+                            <div class="reviews__item-images">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                                <img src="./images/reviews__item-img.jpg" class="reviews__item-img">
+                            </div>
+                            <p class="reviews__item-text">Тут и говорить нечего. Хорошее кресло))) Подголовник тоже ничего, но немного по высоте не подошел.</p>
+                        </div>
+                    </div>
+                    <button class="reviews__all-btn">Загрузить еще</button>
+                </div>
+            </div>
+        </section>
+        <!-- techn -->
+        <section class="techn">
+            <div class="techn__content">
+                <h2 class="section__title">
+                    Технические характеристики
+                </h2>
+                <div class="techn__row">
+                    <h4 class="techn__row-title accordeon__title">
+                        ОСОБЕННОСТИ И ПОДХОД
+                    </h4>
+                    <div class="techn__row-content accordeon__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam consectetur
+                            reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    </div>
+                </div>
+                <div class="techn__row">
+                    <h4 class="techn__row-title accordeon__title">
+                        МАТЕРИАЛЫ
+                    </h4>
+                    <div class="techn__row-content accordeon__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam consectetur
+                            reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    </div>
+                </div>
+                <div class="techn__row">
+                    <h4 class="techn__row-title accordeon__title">
+                        ДЕТАЛИ
+                    </h4>
+                    <div class="techn__row-content accordeon__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam consectetur
+                            reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    </div>
+                </div>
+                <div class="techn__row">
+                    <h4 class="techn__row-title accordeon__title">
+                        УПАКОВКА
+                    </h4>
+                    <div class="techn__row-content accordeon__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam consectetur
+                            reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    </div>
+                </div>
+                <div class="techn__row">
+                    <h4 class="techn__row-title accordeon__title">
+                        ИСТОРИЯ СОЗДАНИЯ
+                    </h4>
+                    <div class="techn__row-content accordeon__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam consectetur
+                            reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- techn -->
 
+        <!-- adv -->
+        <section class="adv">
+            <div class="adv__flex">
+                <div class="adv__item-wrap">
+                    <div class="adv__item">
+                        <h3 class="section__title">
+                            Пожизненная гарантия
+                        </h3>
+                        <p class="section__subtitle">
+                            Мы делаем вещи для жизни. Жизнь не одноразовая, поэтому мы не делаем одноразовые вещи. Это
+                            не хорошо, если это только выглядит хорошо. Мы делаем вещи, которые будут служить долго. Мы
+                            проектируем для долгой жизни, потому что ценим жизнь, прожитую хорошо.
+                        </p>
+                        <div class="adv__item-btn">
+                            <a href="#!" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv__item-wrap">
+                    <div class="adv__item">
+                        <h3 class="section__title">
+                            Бесплатная доставка
+                        </h3>
+                        <p class="section__subtitle">
+                            Мы предлагаем бесплатную доставку наземным транспортом при заказе от 100 долларов.
+                        </p>
+                        <div class="adv__item-btn">
+                            <a href="#!" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv__item-wrap">
+                    <div class="adv__item">
+                        <h3 class="section__title">
+                            Легкий возврат
+                        </h3>
+                        <p class="section__subtitle">
+                            Все заказы могут быть возвращены в течение 30 дней для обмена или возврата денег.
+                        </p>
+                        <div class="adv__item-btn">
+                            <a href="#!" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- adv -->
     </main>
     <!-- main -->
 
@@ -795,13 +991,11 @@
                 <div class="footer__form">
                     <div class="footer__form-content">
                         <h2 class="section__title">
-                            Подпишитесь на нашу
-                            рассылку, чтобы получить
-                            скидку 10%
+                            Не нашли нужную <br> конфигурацию
                         </h2>
                         <form action="#!">
                             <div class="form__field">
-                                <input type="mail" placeholder="Email address">
+                                <input type="tel" placeholder="Введите ваш номер телефона">
                             </div>
                             <div class="form__field">
                                 <button type="sumbit">ПОДПИСАТЬСЯ НА РАССЫЛКУ</button>
@@ -813,30 +1007,20 @@
                     <div class="footer__tabs">
                         <div class="footer__tabs-content">
                             <h2 class="section__title">
-                                Посетите
-                                наши
-                                магазины
+                                Адреса наших <br> магазинов
                             </h2>
                             <ul class="tabs__links">
                                 <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city1')"
-                                        id="defaultOpen">ЛОС-АНДЖЕЛЕС</a></li>
+                                        id="defaultOpen">Москва</a></li>
                                 <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city2')">НЬЮ-ЙОРК</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city3')">САН-ФРАНЦИСКО</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city4')">ДЕНВЕР
-                                        (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city5')">JACKSON
-                                        HOLE (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city6')">AETHERSTREAM</a></li>
+                                        onmouseover="openCity(event, 'city2')">Санкт-Петербург</a></li>
+                                
                             </ul>
                         </div>
                         <div class="footer__tabs-images">
                             <div class="tabs__content">
                                 <div id="city1" class="tabcontent">
-                                    <div style="background-image: url(images/coll-img-1.jpg);">
-                                    </div>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af03d188b05cd4c4cbd2a4e2a922a23f39cac5d4c720e21062fb1d35ed2b4ed07&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                                 </div>
                                 <div id="city2" class="tabcontent">
                                     <div style="background-image: url(images/coll-img-2.jpg);">
@@ -929,21 +1113,18 @@
                     <li><a href="#!">Чат</a></li>
                 </ul>
             </div>
-        </div>
+        </div> 
         <div class="footer__bottom">
             <div class="footer__slogan">
                 YOU ONLY LIVE ONCE, BUT IF YOU DO IT RIGHT, ONCE IS ENOUGH. – MAE WEST
             </div>
             <div class="foooter__copy">
-                © 2023 ALL RIGHTS RESERVED
+                © 2024 ALL RIGHTS RESERVED
             </div>
-        </div>
-    </footer>
+        </div> 
+    </footer> 
     <!-- footer -->
 
-    <!-- shadow -->
-    <div class="shadow"></div>
-    <!-- shadow -->
 
     <!-- svg sprite -->
     <svg class="app-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -962,11 +1143,11 @@
                ></path>
             <path
                 d="M3.16964 3.62953V0.132812H2.04502V3.62953C0.960928 3.88218 0.150391 4.84226 0.150391 6.00446C0.150391 7.16667 0.960928 8.12675 2.04502 8.3794V20.1328H3.16964V8.3794C4.25373 8.12675 5.06427 7.15656 5.06427 6.00446C5.06427 4.85237 4.25373 3.88218 3.16964 3.62953ZM2.6124 7.32837C1.88291 7.32837 1.28514 6.7321 1.28514 6.00446C1.28514 5.27682 1.88291 4.68056 2.6124 4.68056C3.34188 4.68056 3.93965 5.27682 3.93965 6.00446C3.93965 6.7321 3.34188 7.32837 2.6124 7.32837Z"
-                ></path>
+               ></path>
             <path
                 d="M10.7076 12.2096V0.132812H9.58301V12.2096C8.49892 12.4623 7.68838 13.4325 7.68838 14.5846C7.68838 15.7367 8.49892 16.7068 9.58301 16.9595V20.1227H10.7076V16.9595C11.7917 16.7068 12.6023 15.7367 12.6023 14.5846C12.6023 13.4325 11.7917 12.4623 10.7076 12.2096ZM10.1301 15.9287C9.40064 15.9287 8.80287 15.3324 8.80287 14.6048C8.80287 13.8771 9.40064 13.2809 10.1301 13.2809C10.8596 13.2809 11.4574 13.8771 11.4574 14.6048C11.4574 15.3324 10.8596 15.9287 10.1301 15.9287Z"
                 ></path>
-        </symbol>
+    </symbol>
         <symbol id="search-icon" viewBox="0 0 24 24">
             <g clip-path="url(#clip0_1418_12573)">
                 <path
@@ -1040,9 +1221,9 @@
     <!-- svg sprite -->
 
 
-
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

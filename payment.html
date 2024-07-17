@@ -3,36 +3,63 @@
 <html lang="ru">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Часто задаваемые вопросы</title>
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/css/OverlayScrollbars.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/new.css">
+    <meta name="google-site-verification" content="1xVrW6CR40QQ1PleLIkiXDJyYMEr_FVoGwFde2QE2CY" />
+    
 </head>
 
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(95218072, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95218072" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <!-- header -->
     <header class="header">
         <div class="header__top">
-            <div class="header__slogan">
-                СТУЛЬЯ ДЛЯ ВСЕХ И КАЖДОГО
-            </div>
+            <a href="tel:84951202219" class="header__tel ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.78943 4.98318L6.77371 4.75H6.54H5.03H4.76237L4.78058 5.01701C4.87207 6.35884 5.13641 7.65029 5.55343 8.87083L5.68312 9.25043L5.96678 8.96678L7.16678 7.76678L7.27117 7.66238L7.23016 7.52056C6.99537 6.70857 6.84829 5.85627 6.78943 4.98318ZM16.4679 16.7794L16.3275 16.7398L16.224 16.8425L15.024 18.0325L14.7346 18.3194L15.1215 18.4474C16.3505 18.8536 17.6411 19.1179 18.983 19.2094L19.25 19.2276V18.96V17.47V17.2365L19.017 17.2206C18.1541 17.1617 17.3012 17.0147 16.4679 16.7794ZM16.3372 15.1721L16.3443 15.175L16.3516 15.1774C17.4968 15.5557 18.7333 15.76 20 15.76C20.4119 15.76 20.75 16.0981 20.75 16.51V20C20.75 20.4119 20.4119 20.75 20 20.75C10.7481 20.75 3.25 13.2519 3.25 4C3.25 3.58807 3.58807 3.25 4 3.25H7.5C7.91193 3.25 8.25 3.58807 8.25 4C8.25 5.27613 8.45409 6.50196 8.83201 7.64657C8.91457 7.91124 8.85405 8.20239 8.64322 8.41322L6.44322 10.6132L6.31486 10.7416L6.39719 10.9034C7.86137 13.7809 10.2198 16.1288 13.096 17.6025L13.258 17.6855L13.3868 17.5568L15.5844 15.3592C15.7391 15.2132 15.9271 15.14 16.12 15.14C16.2067 15.14 16.28 15.1493 16.3372 15.1721Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>+7 (495) 120-22-19</span>
+            </a>
             <div class="header__sale">
-                <a href="#!">ЛЕТНИЕ РАСПРОДАЖА: КУПИТЕ 2 ИЛИ БОЛЬШЕ. ПОЛУЧИТЕ СКИДКУ 20%</a>
+                <a href="#!">ДОСТАВКА ПО МОСКВЕ И СПБ. ОТПРАВКА В РЕГИОНЫ</a>
             </div>
             <div class="header__city">
-                ЛОС-АНДЖЕЛЕС 13:45
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.83138 17.5246L8 17.6786L8.16862 17.5246C10.2032 15.6659 11.7193 13.9498 12.7284 12.3962C13.7359 10.845 14.25 9.43718 14.25 8.2C14.25 4.43519 11.4913 1.75 8 1.75C4.50869 1.75 1.75 4.43519 1.75 8.2C1.75 9.43718 2.26411 10.845 3.27159 12.3962C4.2807 13.9498 5.79683 15.6659 7.83138 17.5246ZM8 9.75C7.03807 9.75 6.25 8.96193 6.25 8C6.25 7.03807 7.03807 6.25 8 6.25C8.96193 6.25 9.75 7.03807 9.75 8C9.75 8.96193 8.96193 9.75 8 9.75ZM8 0.25C12.0697 0.25 15.75 3.36572 15.75 8.2C15.75 9.79261 15.1092 11.5564 13.7919 13.4984C12.5021 15.3998 10.5739 17.4571 8 19.6708C5.42612 17.4571 3.49792 15.3998 2.20814 13.4984C0.890842 11.5564 0.25 9.79261 0.25 8.2C0.25 3.36572 3.93029 0.25 8 0.25Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+                <span>МОСКВА</span>
             </div>
         </div>
         <div class="header__bottom">
             <div class="mob__menu-open">
                 <button>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#menu-icon"></use>
-                    </svg>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
             <div class="header__logo-min">
@@ -45,7 +72,7 @@
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">ОФИСНЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -77,7 +104,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ 1</a>
+                        <a class="header__menu-link" href="#!">ИГРОВЫЕ КРЕСЛА</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -106,7 +133,7 @@
                         </div>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#!">КАТАЛОГ</a>
+                        <a class="header__menu-link" href="#!">АКСЕССУАРЫ</a>
                         <div class="drop__menu">
                             <div class="dm__flex">
                                 <div class="dm__column-wrap">
@@ -481,20 +508,67 @@
                 </div>
             </div>
             <div class="mob__menu">
-                <div class="mob__menu-top">
-                    <button class="close mob__menu-close">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#close-icon"></use>
-                        </svg>
-                    </button>
-                    <div class="header__logo">
-                        <a href="#!">
-                            <img src="images/logo.svg" alt="">
-                        </a>
+                <div class="footer__nav">
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="mob__menu-bottom">
-
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <h4 class="footer__nav-title">
+                            Социальные сети
+                        </h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#!">Фейсбук</a></li>
+                            <li><a href="#!">Твиттер</a></li>
+                            <li><a href="#!">Телеграмм</a></li>
+                            <li><a href="#!">Инстаграм</a></li>
+                            <li><a href="#!">Чат</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -503,138 +577,201 @@
 
     <!-- main -->
     <main>
-
-        <!-- info -->
-        <section class="info">
-            <div class="info__flex">
-                <ul class="info__list">
-                    <li><a href="#!">FAQ</a></li>
-                    <li><a href="#!">Contact</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                    <li><a href="#!">FAQ</a></li>
-                    <li><a href="#!">Contact</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                </ul>
-                <div class="info__content">
-                    <h1 class="section__title-big">
-                        FAQ
-                    </h1>
-                    <div class="techn__content">
-                        <h2 class="section__title">
-                            Технические характеристики
-                        </h2>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ОСОБЕННОСТИ И ПОДХОД
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
-                            </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                МАТЕРИАЛЫ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
-                            </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ДЕТАЛИ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
-                            </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                УПАКОВКА
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
-                            </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ИСТОРИЯ СОЗДАНИЯ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
-                            </div>
-                        </div>
+        <div class="category-page">
+            <div class="breackpoints">
+                <a href="#" class="breackpoints__link">Main <span>-</span></a>
+                <a href="#" class="breackpoints__link">Catalog <span>-</span></a>
+                <a href="#" class="breackpoints__link active">Order <span>-</span></a>
+            </div>
+            <div class="category__title">Order</div>
+        </div>
+        <section class="payment__page">
+            <div class="container">
+                <div class="payment__info">
+                    <div class="payment__block">
+                        <div class="payment__title">Получатель</div>
+                        <form action="" class="payment__form">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Отчество">
+                            <input type="text" placeholder="+7 (---) --- -- --">
+                        </form>
                     </div>
-                    <div class="techn__content">
-                        <h2 class="section__title">
-                            Технические характеристики
-                        </h2>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ОСОБЕННОСТИ И ПОДХОД
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                    <div class="payment__block">
+                        <div class="delivery__title">Способ доставки</div>
+                       <div class="delivery__wrapper">
+                            <div class="delivery__top">
+                                <div class="delivery__thumb active">Самовывоз</div>
+                                <div class="delivery__thumb">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.75 8.08333V12.75H20H19.75V13C19.75 14.5219 18.5219 15.75 17 15.75C15.4781 15.75 14.25 14.5219 14.25 13V12.75H14H8H7.75V13C7.75 14.5219 6.52193 15.75 5 15.75C3.47807 15.75 2.25 14.5219 2.25 13V12.75H2H0.25V2C0.25 1.03807 1.03807 0.25 2 0.25H15.75V4V4.25H16H18.875L21.75 8.08333ZM18.6967 5.34575L18.6217 5.25H18.5H16H15.75V5.5V8V8.25H16H20.46H20.9737L20.6567 7.84575L18.6967 5.34575ZM7.03433 11.1674L7.1088 11.25H7.22H14H14.25V11V2V1.75H14H2H1.75V2V11V11.25H2H2.78H2.89121L2.96567 11.1674C3.47208 10.6058 4.1863 10.25 5 10.25C5.8137 10.25 6.52792 10.6058 7.03433 11.1674ZM3.75 13C3.75 13.6881 4.31193 14.25 5 14.25C5.68807 14.25 6.25 13.6881 6.25 13C6.25 12.3119 5.68807 11.75 5 11.75C4.31193 11.75 3.75 12.3119 3.75 13ZM15.75 13C15.75 13.6881 16.3119 14.25 17 14.25C17.6881 14.25 18.25 13.6881 18.25 13C18.25 12.3119 17.6881 11.75 17 11.75C16.3119 11.75 15.75 12.3119 15.75 13Z" fill="#C9C9C9" stroke="white" stroke-width="0.5" />
+                                    </svg>
+                                    Доставка до двери
+                                </div>
                             </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                МАТЕРИАЛЫ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                            <div class="delivery__content">
+                                <div class="delivery__pickup">
+                                    <img src="./images/pickup.png" alt="">
+                                    <div class="delivery__pickup-content">
+                                        <div class="delivery__pickup-title">Шоурум в Москве</div>
+                                        <div class="delivery__pickup-list">
+                                            <div class="delivery__pickup-li"><span>г. Москва -</span> Аллея Первой Маевки д. 15 стр. 6</div>
+                                            <div class="delivery__pickup-li"><span>Тел -</span> +7 (495) 120-22-19</div>
+                                            <div class="delivery__pickup-li"><span>График работы -</span> Без выходных с 10:00 до 20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="delivery__pickup">
+                                    <img src="./images/pickup.png" alt="">
+                                    <div class="delivery__pickup-content">
+                                        <div class="delivery__pickup-title">Шоурум в Москве</div>
+                                        <div class="delivery__pickup-list">
+                                            <div class="delivery__pickup-li"><span>г. Москва -</span> Аллея Первой Маевки д. 15 стр. 6</div>
+                                            <div class="delivery__pickup-li"><span>Тел -</span> +7 (495) 120-22-19</div>
+                                            <div class="delivery__pickup-li"><span>График работы -</span> Без выходных с 10:00 до 20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ДЕТАЛИ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                       </div>
+                    </div>
+                    <div class="payment__banks">
+                        <div class="delivery__title">Способ оплаты</div>
+                        <div class="payment__banks-inner">
+                            <div class="payment__banks-item">
+                                <div class="payment__banks-img">
+                                    <img src="./images/bank.png" alt="">
+                                    СБП
+                                </div>
+                                <div class="checkbox">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                УПАКОВКА
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                            <div class="payment__banks-item">
+                                <div class="payment__banks-img">
+                                    <img src="./images/bank.png" alt="">
+                                    СБП
+                                </div>
+                                <div class="checkbox">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div class="techn__row">
-                            <h4 class="techn__row-title accordeon__title">
-                                ИСТОРИЯ СОЗДАНИЯ
-                            </h4>
-                            <div class="techn__row-content accordeon__content">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores fugit quam
-                                    consectetur
-                                    reprehenderit obcaecati laborum ratione modi autem suscipit porro.</p>
+                            <div class="payment__banks-item">
+                                <div class="payment__banks-img">
+                                    <img src="./images/bank.png" alt="">
+                                    СБП
+                                </div>
+                                <div class="checkbox">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="payment__compound">
+                    <div class="delivery__title">Состав заказа</div>
+                    <div class="payment__compound-inner">
+                        <div class="payment__compound-img">
+                            <img src="./images/payment-img.png" alt="">
+                        </div>
+                        <div class="payment__compound-info">
+                            <div class="payment__compound-title">Office chair Herman Miller Aeron</div>
+                            <div class="payment__compound-list">
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                            </div>
+                        </div>
+                        <div class="payment__compound-actions">
+                            <div class="payment__compound-cols">
+                                <button class="payment__compound-btn">
+                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51659 1.51634H0.483252V0.483008H9.51659V1.51634Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                    </svg>
+                                </button>
+                                <div class="payment__compound-value">1</div>
+                                <button class="payment__compound-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.66659 4.48301H9.51659V5.51634H5.66659H5.51659V5.66634V9.51634H4.48325V5.66634V5.51634H4.33325H0.483252V4.48301H4.33325H4.48325V4.33301V0.483008H5.51659V4.33301V4.48301H5.66659Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="payment__compound-price">189 990 ₽</div>
+                        <button class="payment__compound-delete">
+                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.33325 3.85H2.18325V4V10.6667V10.8167H2.33325H7.66659H7.81659V10.6667V4V3.85H7.66659H2.33325ZM7.22719 0.772733L7.27112 0.816667H7.33325H9.51659V1.85H0.483252V0.816667H2.66659H2.72872L2.77265 0.772733L3.39538 0.15H6.60445L7.22719 0.772733ZM2.33325 11.85C1.68276 11.85 1.14992 11.3172 1.14992 10.6667V2.81667H8.84992V10.6667C8.84992 11.3172 8.31708 11.85 7.66659 11.85H2.33325Z" fill="#FF0000" stroke="#FDFDFD" stroke-width="0.3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="payment__compound-inner">
+                        <div class="payment__compound-img">
+                            <img src="./images/payment-img.png" alt="">
+                        </div>
+                        <div class="payment__compound-info">
+                            <div class="payment__compound-title">Office chair Herman Miller Aeron</div>
+                            <div class="payment__compound-list">
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                                <div class="payment__compound-li"><span>Свойство 1 </span>- Graphite</div>
+                            </div>
+                        </div>
+                        <div class="payment__compound-actions">
+                            <div class="payment__compound-cols">
+                                <button class="payment__compound-btn">
+                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51659 1.51634H0.483252V0.483008H9.51659V1.51634Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                    </svg>
+                                </button>
+                                <div class="payment__compound-value">1</div>
+                                <button class="payment__compound-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.66659 4.48301H9.51659V5.51634H5.66659H5.51659V5.66634V9.51634H4.48325V5.66634V5.51634H4.33325H0.483252V4.48301H4.33325H4.48325V4.33301V0.483008H5.51659V4.33301V4.48301H5.66659Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="payment__compound-price">189 990 ₽</div>
+                        <button class="payment__compound-delete">
+                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.33325 3.85H2.18325V4V10.6667V10.8167H2.33325H7.66659H7.81659V10.6667V4V3.85H7.66659H2.33325ZM7.22719 0.772733L7.27112 0.816667H7.33325H9.51659V1.85H0.483252V0.816667H2.66659H2.72872L2.77265 0.772733L3.39538 0.15H6.60445L7.22719 0.772733ZM2.33325 11.85C1.68276 11.85 1.14992 11.3172 1.14992 10.6667V2.81667H8.84992V10.6667C8.84992 11.3172 8.31708 11.85 7.66659 11.85H2.33325Z" fill="#FF0000" stroke="#FDFDFD" stroke-width="0.3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="payment__compound-delivery">
+                        <div class="payment__compound-delivery-img">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.0166 10.0497V14.0163H17.4999H17.3499V14.1663C17.3499 15.4668 16.3004 16.5163 14.9999 16.5163C13.6994 16.5163 12.6499 15.4668 12.6499 14.1663V14.0163H12.4999H7.49992H7.34992V14.1663C7.34992 15.4668 6.30041 16.5163 4.99992 16.5163C3.69943 16.5163 2.64992 15.4668 2.64992 14.1663V14.0163H2.49992H0.983252V4.99967C0.983252 4.16585 1.66609 3.48301 2.49992 3.48301H14.0166V6.66634V6.81634H14.1666H16.5916L19.0166 10.0497ZM16.368 7.82379L16.3229 7.76634H16.2499H14.1666H14.0166V7.91634V9.99967V10.1497H14.1666H17.8832H18.1915L18.0013 9.90713L16.368 7.82379ZM6.73851 12.6001L6.7832 12.6497H6.84992H12.4999H12.6499V12.4997V4.99967V4.84967H12.4999H2.49992H2.34992V4.99967V12.4997V12.6497H2.49992H3.14992H3.21664L3.26132 12.6001C3.6935 12.1208 4.30403 11.8163 4.99992 11.8163C5.69581 11.8163 6.30634 12.1208 6.73851 12.6001ZM4.01658 14.1663C4.01658 14.7075 4.45874 15.1497 4.99992 15.1497C5.54109 15.1497 5.98325 14.7075 5.98325 14.1663C5.98325 13.6252 5.54109 13.183 4.99992 13.183C4.45874 13.183 4.01658 13.6252 4.01658 14.1663ZM14.0166 14.1663C14.0166 14.7075 14.4587 15.1497 14.9999 15.1497C15.5411 15.1497 15.9832 14.7075 15.9832 14.1663C15.9832 13.6252 15.5411 13.183 14.9999 13.183C14.4587 13.183 14.0166 13.6252 14.0166 14.1663Z" fill="black" stroke="#FDFDFD" stroke-width="0.3" />
+                            </svg>  
+                        </div>
+                        <div class="payment__compound-delivery-info">
+                            <div class="payment__compound-delivery-title">Самовывоз</div>
+                            <div class="payment__compound-delivery-descr">Самовывоз - г. Москва - Аллея Первой Маевки д. 15 стр. 6</div>
+                        </div>
+                        <div class="payment__compound-delivery-price">Бесплатно</div>
+                    </div>
+                    <div class="payment__compound-itogprice"><span>Итого</span> 269 990 ₽</div>
+                    <button class="payment__compound-itog-btn">Оформить заказ</button>
+                </div>
+                
             </div>
         </section>
-        <!-- info -->
-
-
     </main>
     <!-- main -->
 
@@ -645,13 +782,11 @@
                 <div class="footer__form">
                     <div class="footer__form-content">
                         <h2 class="section__title">
-                            Подпишитесь на нашу
-                            рассылку, чтобы получить
-                            скидку 10%
+                            Не нашли нужную <br> конфигурацию
                         </h2>
                         <form action="#!">
                             <div class="form__field">
-                                <input type="mail" placeholder="Email address">
+                                <input type="tel" placeholder="Введите ваш номер телефона">
                             </div>
                             <div class="form__field">
                                 <button type="sumbit">ПОДПИСАТЬСЯ НА РАССЫЛКУ</button>
@@ -663,30 +798,20 @@
                     <div class="footer__tabs">
                         <div class="footer__tabs-content">
                             <h2 class="section__title">
-                                Посетите
-                                наши
-                                магазины
+                                Адреса наших <br> магазинов
                             </h2>
                             <ul class="tabs__links">
                                 <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city1')"
-                                        id="defaultOpen">ЛОС-АНДЖЕЛЕС</a></li>
+                                        id="defaultOpen">Москва</a></li>
                                 <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city2')">НЬЮ-ЙОРК</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city3')">САН-ФРАНЦИСКО</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city4')">ДЕНВЕР
-                                        (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks" onmouseover="openCity(event, 'city5')">JACKSON
-                                        HOLE (ПУНКТ ВЫДАЧИ)</a></li>
-                                <li><a href="#!" class="btn tablinks"
-                                        onmouseover="openCity(event, 'city6')">AETHERSTREAM</a></li>
+                                        onmouseover="openCity(event, 'city2')">Санкт-Петербург</a></li>
+                                
                             </ul>
                         </div>
                         <div class="footer__tabs-images">
                             <div class="tabs__content">
                                 <div id="city1" class="tabcontent">
-                                    <div style="background-image: url(images/coll-img-1.jpg);">
-                                    </div>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af03d188b05cd4c4cbd2a4e2a922a23f39cac5d4c720e21062fb1d35ed2b4ed07&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                                 </div>
                                 <div id="city2" class="tabcontent">
                                     <div style="background-image: url(images/coll-img-2.jpg);">
@@ -779,16 +904,16 @@
                     <li><a href="#!">Чат</a></li>
                 </ul>
             </div>
-        </div>
+        </div> 
         <div class="footer__bottom">
             <div class="footer__slogan">
                 YOU ONLY LIVE ONCE, BUT IF YOU DO IT RIGHT, ONCE IS ENOUGH. – MAE WEST
             </div>
             <div class="foooter__copy">
-                © 2023 ALL RIGHTS RESERVED
+                © 2024 ALL RIGHTS RESERVED
             </div>
-        </div>
-    </footer>
+        </div> 
+    </footer> 
     <!-- footer -->
 
 
@@ -797,23 +922,23 @@
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="logo-min-icon" viewBox="0 0 129.05 139.72">
             <g>
-                <path
+                <path 
                     d="M95.05,103.24l-27,27a5,5,0,0,1-7,0l-27-27-1.81,9.51,23.17,23.17a13,13,0,0,0,18.33,0l23.17-23.17Z" />
-                <path
+                <path 
                     d="M125.25,66,98.56,39.34,91.11.11l0-.11h-8l-4.6,19.26-4.79-4.79a13,13,0,0,0-18.33,0l-4.79,4.79L46,0h-8l0,.11L30.49,39.34,3.8,66a13,13,0,0,0,0,18.33L19,99.6l-6.28,33.05h7.82L30.78,79,42.3,18.33l22.22,92.94L86.75,18.33,98.27,79l10.2,53.67h7.82L110,99.6l15.24-15.24A13,13,0,0,0,125.25,66ZM20.85,90.1,9.45,78.7a5,5,0,0,1,0-7L27.84,53.31ZM64.52,77.62,52.75,28.39,61,20.12a5,5,0,0,1,7,0l8.27,8.27ZM119.6,78.7,108.2,90.1l-7-36.79L119.6,71.69A5,5,0,0,1,119.6,78.7Z" />
             </g>
         </symbol>
         <symbol id="filter-icon" viewBox="0 0 21 21">
             <path
                 d="M18.2558 3.62953V0.132812H17.1311V3.62953C16.047 3.88218 15.2365 4.85237 15.2365 6.00446C15.2365 7.15656 16.047 8.12675 17.1311 8.3794V20.1328H18.2558V8.3794C19.3399 8.12675 20.1504 7.15656 20.1504 6.00446C20.1504 4.85237 19.3399 3.88218 18.2558 3.62953ZM17.6884 7.32837C16.9589 7.32837 16.3611 6.7321 16.3611 6.00446C16.3611 5.27682 16.9589 4.68056 17.6884 4.68056C18.4179 4.68056 19.0156 5.27682 19.0156 6.00446C19.0156 6.7321 18.4179 7.32837 17.6884 7.32837Z"
-                fill="black"></path>
+               ></path>
             <path
                 d="M3.16964 3.62953V0.132812H2.04502V3.62953C0.960928 3.88218 0.150391 4.84226 0.150391 6.00446C0.150391 7.16667 0.960928 8.12675 2.04502 8.3794V20.1328H3.16964V8.3794C4.25373 8.12675 5.06427 7.15656 5.06427 6.00446C5.06427 4.85237 4.25373 3.88218 3.16964 3.62953ZM2.6124 7.32837C1.88291 7.32837 1.28514 6.7321 1.28514 6.00446C1.28514 5.27682 1.88291 4.68056 2.6124 4.68056C3.34188 4.68056 3.93965 5.27682 3.93965 6.00446C3.93965 6.7321 3.34188 7.32837 2.6124 7.32837Z"
-                fill="black"></path>
+               ></path>
             <path
                 d="M10.7076 12.2096V0.132812H9.58301V12.2096C8.49892 12.4623 7.68838 13.4325 7.68838 14.5846C7.68838 15.7367 8.49892 16.7068 9.58301 16.9595V20.1227H10.7076V16.9595C11.7917 16.7068 12.6023 15.7367 12.6023 14.5846C12.6023 13.4325 11.7917 12.4623 10.7076 12.2096ZM10.1301 15.9287C9.40064 15.9287 8.80287 15.3324 8.80287 14.6048C8.80287 13.8771 9.40064 13.2809 10.1301 13.2809C10.8596 13.2809 11.4574 13.8771 11.4574 14.6048C11.4574 15.3324 10.8596 15.9287 10.1301 15.9287Z"
-                fill="black"></path>
-        </symbol>
+                ></path>
+    </symbol>
         <symbol id="search-icon" viewBox="0 0 24 24">
             <g clip-path="url(#clip0_1418_12573)">
                 <path
@@ -887,9 +1012,9 @@
     <!-- svg sprite -->
 
 
-
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OverlayScrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
