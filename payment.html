@@ -586,6 +586,7 @@
             <div class="category__title">Order</div>
         </div>
         <section class="payment__page">
+            <button class="payment__compound-itog-btn mobile-btn">Оформить заказ</button>
             <div class="container">
                 <div class="payment__info">
                     <div class="payment__block">
@@ -611,7 +612,7 @@
                             </div>
                             <div class="delivery__content">
                                 <div class="delivery__pickup">
-                                    <img src="./images/pickup.png" alt="">
+                                    <img src="./images/pickup.png" alt="" class="delivery__pickup-map">
                                     <div class="delivery__pickup-content">
                                         <div class="delivery__pickup-title">Шоурум в Москве</div>
                                         <div class="delivery__pickup-list">
@@ -624,10 +625,11 @@
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
                                         </svg>
+                                        <input type="radio">
                                     </div>
                                 </div>
                                 <div class="delivery__pickup">
-                                    <img src="./images/pickup.png" alt="">
+                                    <img src="./images/pickup.png" alt="" class="delivery__pickup-map">
                                     <div class="delivery__pickup-content">
                                         <div class="delivery__pickup-title">Шоурум в Москве</div>
                                         <div class="delivery__pickup-list">
@@ -640,6 +642,7 @@
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.75732 7.68967L3.86334 7.79569L3.9694 7.68972L10.9233 0.742355L11.6513 1.47027L3.86339 9.25814L0.349226 5.74398L1.08301 5.01536L3.75732 7.68967Z" fill="white" stroke="#2F2F2F" stroke-width="0.3" />
                                         </svg>
+                                        <input type="radio">
                                     </div>
                                 </div>
                             </div>
@@ -648,7 +651,7 @@
                     <div class="payment__banks">
                         <div class="delivery__title">Способ оплаты</div>
                         <div class="payment__banks-inner">
-                            <div class="payment__banks-item">
+                            <div class="payment__banks-item payment__pickup">
                                 <div class="payment__banks-img">
                                     <img src="./images/bank.png" alt="">
                                     СБП
@@ -659,7 +662,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="payment__banks-item">
+                            <div class="payment__banks-item payment__pickup">
                                 <div class="payment__banks-img">
                                     <img src="./images/bank.png" alt="">
                                     СБП
@@ -670,7 +673,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="payment__banks-item">
+                            <div class="payment__banks-item payment__pickup">
                                 <div class="payment__banks-img">
                                     <img src="./images/bank.png" alt="">
                                     СБП
@@ -767,7 +770,7 @@
                         <div class="payment__compound-delivery-price">Бесплатно</div>
                     </div>
                     <div class="payment__compound-itogprice"><span>Итого</span> 269 990 ₽</div>
-                    <button class="payment__compound-itog-btn">Оформить заказ</button>
+                    <button class="payment__compound-itog-btn desc-btn">Оформить заказ</button>
                 </div>
                 
             </div>
@@ -915,6 +918,14 @@
         </div> 
     </footer> 
     <!-- footer -->
+
+
+    <div id="mapModal" class="map-modal">
+        <div class="modal-content">
+            <span class="map-close-btn">&times;</span>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae51c27922e8049cc0620ed0afed1f4c20deeab854c40806a4b9e7216f180e50b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </div>
 
 
     <!-- svg sprite -->

@@ -1,3 +1,56 @@
+$(document).ready(function() {
+  // Модальное окно для города
+  var $cityModal = $("#cityModal");
+  var $openCityModalButton = $("#openModalcity");
+  var $cityCloseButton = $(".city-close-btn");
+
+  $openCityModalButton.on("click", function() {
+      $cityModal.css("display", "flex");
+  });
+
+  $cityCloseButton.on("click", function() {
+      $cityModal.css("display", "none");
+  });
+
+  $(window).on("click", function(event) {
+      if ($(event.target).is($cityModal)) {
+          $cityModal.css("display", "none");
+      }
+  });
+
+  // Модальное окно для карты
+  var $mapModal = $("#mapModal");
+  var $openMapModalButton = $(".delivery__pickup-map");
+  var $mapCloseButton = $(".map-close-btn");
+
+  $openMapModalButton.on("click", function() {
+      $mapModal.css("display", "flex");
+  });
+
+  $mapCloseButton.on("click", function() {
+      $mapModal.css("display", "none");
+  });
+
+  $(window).on("click", function(event) {
+      if ($(event.target).is($mapModal)) {
+          $mapModal.css("display", "none");
+      }
+  });
+});
+
+$(document).ready(function () {
+  var $button = $('.payment__compound-itog-btn');
+  var buttonOffsetTop = $button.offset().top;
+
+  $(window).on('scroll', function () {
+      if ($(window).scrollTop() + $(window).height() >= buttonOffsetTop) {
+          $button.addClass('static');
+      } else {
+          $button.removeClass('static');
+      }
+  });
+});
+
 $(document).ready(function(){
   // Инициализация slick слайдера
   $('.bestsellers__inner').slick({
@@ -121,16 +174,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const pickups = document.querySelectorAll('.delivery__pickup');
+$(document).ready(function() {
+  $('.delivery__pickup').on('click', function() {
+      $('.delivery__pickup').removeClass('active'); // Убираем класс active со всех элементов
+      $(this).addClass('active'); // Добавляем класс active к текущему элементу
+      $(this).find('input[type="radio"]').prop('checked', true); // Отмечаем радио внутри текущего элемента
+  });
+});
 
-  pickups.forEach(function(pickup) {
-      pickup.addEventListener('click', function() {
-          pickups.forEach(function(p) {
-              p.classList.remove('active');
-          });
-          pickup.classList.add('active');
-      });
+$(document).ready(function() {
+  $('.payment__pickup').on('click', function() {
+      $('.payment__pickup').removeClass('active'); // Убираем класс active со всех элементов
+      $(this).addClass('active'); // Добавляем класс active к текущему элементу
+      $(this).find('input[type="radio"]').prop('checked', true); // Отмечаем радио внутри текущего элемента
   });
 });
 
@@ -335,6 +391,8 @@ $(function () {
         $('.header__menu-item:first-child').addClass('active');
     }
 });
+
+
 
   $('.mob__menu-close').click(function () {
     $('body').removeClass('oh');

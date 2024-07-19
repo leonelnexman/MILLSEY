@@ -48,7 +48,7 @@
             <div class="header__sale">
                 <a href="#!">ДОСТАВКА ПО МОСКВЕ И СПБ. ОТПРАВКА В РЕГИОНЫ</a>
             </div>
-            <div class="header__city">
+            <div class="header__city" id="openModalcity">
                 <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.83138 17.5246L8 17.6786L8.16862 17.5246C10.2032 15.6659 11.7193 13.9498 12.7284 12.3962C13.7359 10.845 14.25 9.43718 14.25 8.2C14.25 4.43519 11.4913 1.75 8 1.75C4.50869 1.75 1.75 4.43519 1.75 8.2C1.75 9.43718 2.26411 10.845 3.27159 12.3962C4.2807 13.9498 5.79683 15.6659 7.83138 17.5246ZM8 9.75C7.03807 9.75 6.25 8.96193 6.25 8C6.25 7.03807 7.03807 6.25 8 6.25C8.96193 6.25 9.75 7.03807 9.75 8C9.75 8.96193 8.96193 9.75 8 9.75ZM8 0.25C12.0697 0.25 15.75 3.36572 15.75 8.2C15.75 9.79261 15.1092 11.5564 13.7919 13.4984C12.5021 15.3998 10.5739 17.4571 8 19.6708C5.42612 17.4571 3.49792 15.3998 2.20814 13.4984C0.890842 11.5564 0.25 9.79261 0.25 8.2C0.25 3.36572 3.93029 0.25 8 0.25Z" fill="black" stroke="white" stroke-width="0.5" />
                 </svg>
@@ -1692,6 +1692,95 @@
         </div> 
     </footer> 
     <!-- footer -->
+
+
+    <div id="cityModal" class="city-modal">
+        <div class="city-modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="city-modal__title">Выберите город</div>
+            <div class="city-modal__input">
+                <input type="text" placeholder="Искать...">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5365 11.18L11.6091 11.25H11.71H12.3963L17.1366 15.9998L15.9998 17.1366L11.25 12.3963V11.71V11.6091L11.18 11.5365L10.91 11.2565L10.7461 11.0865L10.567 11.2404C9.47058 12.183 8.04787 12.75 6.5 12.75C3.04807 12.75 0.25 9.95193 0.25 6.5C0.25 3.04807 3.04807 0.25 6.5 0.25C9.95193 0.25 12.75 3.04807 12.75 6.5C12.75 8.04787 12.183 9.47058 11.2404 10.567L11.0865 10.7461L11.2565 10.91L11.5365 11.18ZM1.75 6.5C1.75 9.12807 3.87193 11.25 6.5 11.25C9.12807 11.25 11.25 9.12807 11.25 6.5C11.25 3.87193 9.12807 1.75 6.5 1.75C3.87193 1.75 1.75 3.87193 1.75 6.5Z" fill="black" stroke="white" stroke-width="0.5" />
+                </svg>
+            </div>
+            <div class="city-modal__wrapper">
+                <div class="city-modal__item active">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="city-modal__item">
+                    Москва
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.62342 11.0766L5.8002 11.2534L5.97697 11.0766L16.4002 0.653358L17.4466 1.6998L5.8002 13.3463L0.553749 8.0998L1.6002 7.05336L5.62342 11.0766Z" fill="black" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <!-- svg sprite -->

@@ -24,6 +24,7 @@ html{
     text-align: right;
     color: #000;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 .header__sale{
     font-size: 1rem;
@@ -1353,6 +1354,37 @@ main{
    width: 3rem;
    height: 3rem; 
 }
+
+.payment__pickup .checkbox{
+    position: absolute;
+    right: 1.9rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 0.1rem solid #000;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.payment__pickup .checkbox svg{
+    opacity: 0;
+}
+.payment__pickup.active .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2.3);
+    background: #000;
+}
+.payment__pickup.active .checkbox svg{
+    width: 0.9rem;
+    height: 0.9rem;
+    opacity: 1;
+}
+.checkbox{
+    cursor: pointer;
+}
+
+
+
 .payment__banks-img{
     display: flex;
     align-items: center;
@@ -1423,6 +1455,147 @@ main{
 .mob__menu-open.active span:nth-child(1){
     transform: rotate(45deg) translate(0, 0);
 }
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.city-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 7777777777777777777;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-modal-content {
+    background-color: #fefefe;
+    border-radius: 1.2rem;
+    padding: 3rem;
+    width: 54.6rem;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    border-radius: 1.2rem;
+    width: 80.6rem;
+    padding: 3rem;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.city-modal__title{
+    font-weight: 600;
+font-size: 2.4rem;
+line-height: 110%;
+color: #000;
+margin-bottom: 1.5rem;
+}
+.city-modal__input{
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid #c5c5c5;
+    border-radius: 0.8rem;
+    padding: 1.4rem 1.6rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.city-modal__input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #c5c5c5;
+}
+.city-modal__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    max-height: 24rem;
+    overflow: auto;
+}
+.city-modal__item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #b9b9b9;
+    transition: all 0.3s;
+}
+.city-modal__item svg{
+    width: 1.8rem;
+    height: 1.4rem;
+}
+.city-modal__item svg{
+    opacity: 0;
+    transition: all 0.3s;
+}
+.city-modal__item.active svg{
+    opacity: 1;
+}
+.city-modal__item.active{
+    color: #000;
+}
+.mobile-btn{
+    display: none;
+}
+.checkbox input{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.map-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 7777777777777777777;
+}
+
+.modal-content{
+    position: relative;
+}
+
+.map-close-btn{
+    position: absolute;
+    font-size: 3rem;
+    position: absolute;
+    top: -0.5rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
 
 
 @media (max-width: 962px){
@@ -1437,6 +1610,9 @@ main{
     }
     .category-page{
         padding-top: 1rem;
+    }
+    .modal-content{
+        width: 95%;
     }
     .header__sale{
         display: none;
@@ -1823,7 +1999,53 @@ main{
     .mob__menu .footer__nav-title{
         margin-bottom: 0;
     }
+    .city-modal__input input{
+        font-size: 1.9rem;
+    }
+    .city-modal__item{
+        font-size: 1.9rem;
+    }
+    .city-modal__item svg{
+        width: 2.5rem;
+        height: 2.1rem;
+    }
+    .close-btn{
+        margin-top: -1.9rem;
+    }
+    .payment__compound-itog-btn{
+        position: sticky;
+        top: 93vh;
+        left: 0;
+        z-index: 777777;
+        padding: 2.5rem
+    }
+    .payment__compound-itog-btn.static{
+        position: static;
+        width: 100%;
+    }
+    .payment__page{
+        position: relative;
+        overflow: visible;
+    }
+    .payment__compound-itogprice{
+        margin-bottom: 9rem;
+    }
+    .mobile-btn{
+        display: block;
+    }
+    .desc-btn{
+        display: none !important;
+    }
+    .search__form{
+        position: relative;
+        z-index: 7777777777;
+    }
+    .search__drop{
+        pointer-events: all;
+    }
 }
+
+
 
 @media (max-width: 600px){
     .product__item-wrap{
