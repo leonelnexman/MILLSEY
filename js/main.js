@@ -38,6 +38,17 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $(".delivery__thumb").click(function() {
+      var index = $(this).index(); // Get the index of the clicked thumb
+      $(".delivery__thumb").removeClass("active"); // Remove active class from all thumbs
+      $(this).addClass("active"); // Add active class to the clicked thumb
+
+      $(".delivery__block").removeClass("active"); // Remove active class from all blocks
+      $(".delivery__block").eq(index).addClass("active"); // Add active class to the corresponding block
+  });
+});
+
 $(document).ready(function () {
   var $button = $('.payment__compound-itog-btn');
   var buttonOffsetTop = $button.offset().top;
