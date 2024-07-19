@@ -86,7 +86,7 @@ p,
 figure {
   margin: 0 0 0px;
   padding: 0;
-  font-family: MaisonNeue-Book, sans-serif;
+  font-family: 'MaisonNeue-Book', sans-serif;
 
   font-weight: inherit;
 }
@@ -170,7 +170,7 @@ body.oh {
 
 body {
   /*font-family: 'Mont';*/
-  font-family: MaisonNeueMono-Regular, sans-serif;
+  font-family: 'MaisonNeueExtended-Demi', sans-serif;
   line-height: normal;
 }
 
