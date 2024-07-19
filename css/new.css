@@ -49,7 +49,7 @@ html{
 .mob__menu-open span{
     display: block;
     background: #000;
-    height: 2px;
+    height: 1px;
 }
 .mob__menu-open span:nth-child(1){
     width: 3.1rem;
@@ -62,12 +62,35 @@ html{
      width: 19.4rem;
      height: 2.2rem;
 }
+.search__form input{
+    border-radius: 0.8rem;
+    padding-left: 1.9rem;
+}
+.search__form .submit{
+    left: auto;
+    right: 0;
+}
 .header__menu-link{
     font-size: 1.2rem;
     padding: 0.4rem 2rem;
 }
 .header__user{
     display: none;
+}
+.sizes__btn, .dop__btn{
+    font-family: 'MaisonNeue-Book', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #c5c5c5;
+}
+.sizes__btn svg , .dop__btn svg{
+    width: 2.4rem;
+}
+.sizes__title, .dop__title{
+    display: flex;
+    justify-content: space-between;
 }
 .header__search svg{
     width: 2.4rem;
@@ -251,6 +274,9 @@ section, .footer{
     gap: 0.7rem;
     font-size: 1.2rem;
     color: #000;
+    padding: 0.8rem;
+    border-radius: 12rem;
+    background-color: #fff;
 }
 .product__color img{
     border-radius: 5rem;
@@ -363,7 +389,7 @@ section, .footer{
 .journal__tabs{
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 2.4rem;
 }
 .journal__tabs{
     display: flex;
@@ -772,6 +798,7 @@ main{
 .colors__wrapper{
     display: flex;
     align-items: center;
+    gap: 0.8rem;
 }
 .colors__title{
     font-weight: 600;
@@ -913,6 +940,8 @@ main{
     display: flex;
     align-items: flex-start;
     gap: 0.9rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid #f9f9f9;
 }
 .product__page-saleprice{
     font-size: 1.2rem;
@@ -1072,11 +1101,15 @@ main{
     border: 0.1rem solid #f9f9f9;
     border-radius: 0.8rem;
     font-size: 1.4rem;
-    color: #c5c5c5;
+    color: #000;
 }
 .delivery__top{
     display: flex;
     gap: 1.3rem;
+    padding: 0 1.8rem;
+}
+.delivery__content{
+    padding-left: 0.7rem;
 }
 .delivery__wrapper{
     background: #fff;
@@ -1233,6 +1266,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f3f2f2;
+    border-radius: 0.8rem
 }
 .payment__compound-value{
     font-weight: 400;
