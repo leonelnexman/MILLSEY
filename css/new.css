@@ -1630,6 +1630,15 @@ margin-bottom: 1.5rem;
 .delivery__thumb{
     cursor: pointer;
 }
+.product__availability-done{
+    font-family: 'MaisonNeue-Book', sans-serif;
+}
+.product__reviews{
+    font-family: 'MaisonNeue-Book', sans-serif;
+}
+.bestsellers__collor-lable{
+    font-family: 'MaisonNeue-Book', sans-serif;
+}
 
 
 
